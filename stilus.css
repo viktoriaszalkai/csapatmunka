@@ -1,11 +1,25 @@
-*{
-    
+body{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+article{
+    padding: 20px;
+}
+h1{
+    text-align: center;
 }
 .adel tr:nth-child(odd) td:nth-child(odd){
     background-color: rgb(214, 146, 168);
 }
 .adel tr:nth-child(even) td:nth-child(even){
     background-color: rgb(214, 146, 168);
+}
+.adel{
+    tr,td{
+        width: 40px;
+        height:40px;
+    }
 }
 /*menu*/
 ul{
@@ -26,15 +40,10 @@ table{
         background-color: rgb(184, 103, 103);
     }
     tr,td{
-        width: 20px;
-        height:20px;
+        width: 40px;
+        height:40px;
     }
-    th{
-        width: 20px;
-        height: 20px;
-        background-color: rgba(128, 128, 128, 0.464);
-        
-    }
+    
 /* grid */
 main{
     display: grid;
@@ -57,3 +66,33 @@ footer{
     grid-area: f;
 }
 /* reszp. */
+
+@media only screen and (max-width: 400px) {/* töréspont */
+    body {
+        width: 100%;
+    }
+    main {
+        font-size: 20px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "f" ;    
+
+    }
+    nav ul{
+
+        grid-template-columns: 1fr;
+        gap: 5px;
+        list-style-type: none;
+        text-align: center;}
+    article{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            gap: 10px;
+        }
+}
+
+
