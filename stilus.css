@@ -9,6 +9,7 @@
 .adel tr:nth-child(even) td:nth-child(even){
     background-color: rgb(214, 146, 168);
 }
+/*menu*/
 ul{
     list-style-type: none;
 }
