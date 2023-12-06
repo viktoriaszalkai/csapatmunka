@@ -1,4 +1,4 @@
-
+/*  tablazatok */
 table{
     border-collapse: collapse;
 }
@@ -18,3 +18,25 @@ table{
         background-color: rgba(128, 128, 128, 0.464);
         
     }
+/* grid */
+main{
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "a a n"
+    "f f f"
+    ;
+}
+article{
+    grid-area: a;
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+footer{
+    grid-area: f;
+}
+/* reszp. */
