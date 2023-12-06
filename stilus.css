@@ -14,8 +14,16 @@ main, header, article, footer, nav{
 ul{
     list-style-type: none;
 }
-li:hover{
+
+li a{
+    color: black;
+    font-weight: bold;
+}
+li a:hover{
     color: pink;
+}
+li a{
+    text-decoration: none;
 }
 
 /*  tablazatok */
